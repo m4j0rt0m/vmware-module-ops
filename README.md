@@ -41,14 +41,16 @@ make clean
 ├─ build/          # Generated files (keys and imported files)
 ├─ sign.sh         # Script for signing files
 ├─ Makefile        # Automation rules
+├─ LICENSE         # Project's license
 └─ README.md       # Project documentation
 ```
 
 ## Files
 
-* `sign.sh`: A script for signing files using the keys.
-* `Makefile`: Contains automation rules for generating keys, signing files, and importing keys.
-* `README.md`: This documentation.
+* `sign.sh`   : A script for signing files using the keys.
+* `Makefile`  : Contains automation rules for generating keys, signing files, and importing keys.
+* `LICENSE`   : The project's license file.
+* `README.md` : This documentation.
 
 ## Important Notes
 
