@@ -16,7 +16,7 @@ clean:
 	rm -v $(BUILD_DIR)/*
 
 %.done: %.priv %.der %.imp
-	./sign.sh $*.der $*.priv $@
+	sudo ./sign.sh $*.der $*.priv $@
 
 %.der %.priv:
 	mkdir -p build
