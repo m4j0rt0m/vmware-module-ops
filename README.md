@@ -1,4 +1,4 @@
-# Sign vmmon and vmnet
+# Automated Key Generation and Import for VMware Modules
 
 On EFI secure boot systems, it is needed to sign VMware modules (vmmon and vmnet) for VMware.
 
