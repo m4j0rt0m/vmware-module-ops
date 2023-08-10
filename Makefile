@@ -24,5 +24,5 @@ clean:
 	chmod 600 $*.priv
 
 %.imp: %.der
-	sudo mokutil --import $< > $@
-	sudo chown $(USER) $@
+	sudo mokutil --import $<
+	echo "IMPORTED!" > $@
