@@ -63,6 +63,6 @@ This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LI
 
 ## Author
 
-Abraham J. Ruiz R.
-Contact: major.tom.spaceworm@gmail.com
-GitHub: m4j0rt0m
+* Abraham J. Ruiz R.
+* Contact: major.tom.spaceworm@gmail.com
+* GitHub: m4j0rt0m
