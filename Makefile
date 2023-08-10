@@ -16,7 +16,11 @@ all: $(KEY_DONE)
 	@echo "All done!"
 
 clean:
-	@rm -v $(BUILD_DIR)/*
+	@if [ -n "$(OBJS)" ]; then \
+		rm -v $(OBJS); \
+	else \
+		echo "Nothing to clean!"; \
+	fi
 
 %.done: %.priv %.der %.imp
 	@sudo ./sign.sh $*.der $*.priv $@
