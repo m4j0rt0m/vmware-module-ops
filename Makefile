@@ -10,6 +10,8 @@ KEY_PRIV    := $(BUILD_DIR)/$(KEY_NAME).priv
 KEY_IMP     := $(BUILD_DIR)/$(KEY_NAME).imp
 KEY_DONE    := $(BUILD_DIR)/$(KEY_NAME).done
 
+.PRECIOUS: %.der %.priv %.imp %.done
+
 all: $(KEY_DONE)
 	@echo "All done!"
 
