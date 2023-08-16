@@ -10,14 +10,16 @@ KEY_PRIV    := $(BUILD_DIR)/$(KEY_NAME).priv
 KEY_IMP     := $(BUILD_DIR)/$(KEY_NAME).imp
 KEY_DONE    := $(BUILD_DIR)/$(KEY_NAME).done
 
+EXIST_OBJS  := $(wildcard $(KEY_DER) $(KEY_PRIV) $(KEY_IMP) $(KEY_DONE))
+
 .PRECIOUS: %.der %.priv %.imp %.done
 
 all: $(KEY_DONE)
 	@echo "All done!"
 
 clean:
-	@if [ -n "$(OBJS)" ]; then \
-		rm -v $(OBJS); \
+	@if [ -n "$(EXIST_OBJS)" ]; then \
+		rm -vf $(EXIST_OBJS); \
 	else \
 		echo "Nothing to clean!"; \
 	fi
